@@ -1,0 +1,129 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM5wYdmji9KTZ20jhl4hY3C",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Ujwal01-coder/Python-codes/blob/main/Python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wclsIMJaMyWs",
+        "outputId": "f6f7f4ce-3050-4865-f9b8-cf0dce031661"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter any year: 12\n",
+            "Enter any month: 4\n",
+            "      April 12\n",
+            "Mo Tu We Th Fr Sa Su\n",
+            "                   1\n",
+            " 2  3  4  5  6  7  8\n",
+            " 9 10 11 12 13 14 15\n",
+            "16 17 18 19 20 21 22\n",
+            "23 24 25 26 27 28 29\n",
+            "30\n",
+            "\n"
+          ]
+        }
+      ],
+      "source": [
+        "import calendar\n",
+        "a=int(input(\"Enter any year: \"))\n",
+        "b=int(input(\"Enter any month: \"))\n",
+        "res=calendar.month(a,b)\n",
+        "print(res)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=2\n",
+        "for i in range(2,5):\n",
+        "    a=a+2\n",
+        "    for j in range(4):\n",
+        "        a=a+3\n",
+        "    print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9WCtZM-0WBsi",
+        "outputId": "3ce5d462-c335-4fbf-eba2-16d6b504127a"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "16\n",
+            "30\n",
+            "44\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=10\n",
+        "for i in range(4):\n",
+        "    for j in range(i+1):\n",
+        "        a=a+i\n",
+        "    print(\"ACE\")\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kLPWHEW_bTAV",
+        "outputId": "2fb6a9ab-c766-46e9-f7f5-4b4c52ad58fc"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ACE\n",
+            "ACE\n",
+            "ACE\n",
+            "ACE\n",
+            "30\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
